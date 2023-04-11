@@ -6,20 +6,20 @@ import org.springframework.web.bind.annotation.*;
 import java.util.Collection;
 import java.util.UUID;
 
-@FeignClient(name = "products")
+@FeignClient(name = "api/products")
 public interface ProductClient {
-    @GetMapping("/products")
+    @GetMapping
     Collection<Product> getProducts();
 
-    @GetMapping("products/{id}")
+    @GetMapping("/{id}")
     Product getProductById(@PathVariable UUID id);
 
-    @PostMapping("/products")
+    @PostMapping
     Product createProduct(@RequestBody Product product);
 
-    @PutMapping("products/{id}")
+    @PutMapping("/{id}")
     Product updateProduct(@PathVariable UUID id, @RequestBody Product product);
 
-    @DeleteMapping("products/{id}")
+    @DeleteMapping("/{id}")
     void deleteProduct(@PathVariable UUID id);
 }
