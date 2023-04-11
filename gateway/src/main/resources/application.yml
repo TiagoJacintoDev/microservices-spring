@@ -1,0 +1,8 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: sales
+          uri: lb://sales
+          predicates:
+            - Path=/sales/**
