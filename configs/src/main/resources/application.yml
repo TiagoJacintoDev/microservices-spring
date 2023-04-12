@@ -1,9 +1,0 @@
-server:
-  port: 1000
-
-spring:
-  cloud:
-    config:
-      server:
-        git:
-          uri: https://gitlab.com/tiagojacintodev/registry-configs

@@ -13,14 +13,6 @@
         </option>
       </GradleProjectSettings>
       <GradleProjectSettings>
-        <option name="externalProjectPath" value="$PROJECT_DIR$/configs" />
-        <option name="modules">
-          <set>
-            <option value="$PROJECT_DIR$/configs" />
-          </set>
-        </option>
-      </GradleProjectSettings>
-      <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/gateway" />
         <option name="gradleJvm" value="openjdk-19" />
         <option name="modules">
